@@ -1,0 +1,5 @@
+A generic Pickle file.
+
+This file will save the authorization key required to begin the patching process. It will be used to automate the patching process.
+
+This file is deleted upon program completion. Retained for visibility.
