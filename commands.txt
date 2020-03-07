@@ -1,0 +1,3 @@
+chmod +x /tmp/patch/bash-scripts/*
+sed -i 's/\r$//' /tmp/patch/bash-scripts/patcher.sh
+(cd /tmp/patch/bash-scripts && ./patcher.sh)

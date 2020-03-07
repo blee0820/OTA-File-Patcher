@@ -1,0 +1,5 @@
+SELECT cclh.camID, ip, di.camPass, DATE_FORMAT(cclh.timestamp, '%m/%d/%Y %T')
+FROM cam_config.log_hb cclh
+JOIN dial_info di ON cclh.camID = di.camID 
+WHERE cclh.camID=%s AND cclh.timestamp=(SELECT MAX(timestamp) FROM cam_config.log_hb WHERE camID=%s)
+GROUP BY camID
