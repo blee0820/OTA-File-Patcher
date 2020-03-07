@@ -1,0 +1,5 @@
+A generic Pickle file.
+
+The user's inputted information will be saved here and used during the automated to patching process.
+
+This file is deleted upon program completion. Retained for visibility.
